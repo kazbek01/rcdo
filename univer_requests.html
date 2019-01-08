@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Univer requests</title>
+</head>
+<link rel="stylesheet" href="css/libs.min.css">
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
+<link rel="stylesheet" href="css/main.css">
+<body>
+<header>
+    <div class="container-fluid bg-top">
+        <div class="row">
+            <div class="container">
+                <div class="header-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">
+                            <img src="img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="place-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Алматы, Казахстан <i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search_result.html">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="right-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Тенге, ₸<i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рус <i
+                                        class="icon arrow-white"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Қаз</a></li>
+                                    <li><a href="#">Eng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="btn-profile"><img src="img/logo/logo-aues.png" alt=""></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav m-menu">
+                            <li><a href="index.html">Для ВУЗов</a></li>
+                            <li><a href="program.html">Новости</a></li>
+                            <li><a href="event.html">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="active"><a href="category.html">Мои профиль</a></li>
+                </ul>
+                <div class="profile-cover">
+                    <div class="profile-cover-item">
+                        <div class="profile-img"><img src="img/logo/logo-aues.png" alt=""></div>
+                        <h1 class="block-title">Алматинский университет Энергетики и Связи</h1>
+                    </div>
+                    <div class="profile-cover-item">
+                        <a href="#" class="btn-border"><i class="icon i-edit"></i>Ред. профиль</a>
+                        <a href="#" class="btn-border"><i class="icon i-logout"></i>Выйти</a>
+                    </div>
+                </div>
+                <div class="univer-link-type">
+                    <ul class="univer-link">
+                        <li class="active"><a href="#">Профиль</a></li>
+                        <li><a href="#">Специальности</a></li>
+                        <li><a href="#">Чат</a></li>
+                        <li><a href="#">Заявки</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="univer-specbox">
+    <div class="container-fluid bg-parent">
+        <div class="row">
+            <div class="bg-back"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="specialty-box">
+                        <div class="search-cover-box">
+                            <form action="" class="search-cover-form">
+                                <button class="btn-search" type="submit"><i class="icon i-search"> </i></button>
+                                <input type="text" placeholder="Введите Ф.И.О студента, № заявки, вид и тип обучения">
+                                <button class="close-search"><i class="icon i-close"> </i></button>
+                            </form>
+                        </div>
+                        <table class="student-table table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Ф.И.О студента <span class="caret"></span></th>
+                                <th>№ заявки <span class="caret"></span> </th>
+                                <th>Вид обучения <span class="caret"></span></th>
+                                <th>Специальность<span class="caret"></span></th>
+                                <th>Дата заявки<span class="caret"></span></th>
+                                <th>Статус<span class="caret"></span></th>
+                                <th><button class="btn-search call-search"><i class="icon i-search"> </i></button></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img">
+                                        <img src="img/main/profile.png" alt="">
+                                    </div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><button class="new-request btn-req">новая заявка</button></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img">
+                                        <img src="img/main/profile.png" alt="">
+                                    </div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><button class="new-request btn-req">новая заявка</button></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img"><img src="img/main/profile.png" alt=""></div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><span class="failure-td">отклонена</span></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img"><img src="img/main/profile.png" alt=""></div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><span class="success-td">принято</span></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img"><img src="img/main/profile.png" alt=""></div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><span class="failure-td">отклонена</span></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img"><img src="img/main/profile.png" alt=""></div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><span class="success-td">принято</span></td>
+                            </tr>
+                            <tr>
+                                <td class="student-profile">
+                                    <div class="student-profile-img">
+                                        <img src="img/main/profile.png" alt="">
+                                    </div>
+                                    Азимханов Рустем
+                                </td>
+                                <td>38123</td>
+                                <td>Магистратура</td>
+                                <td>Приборостроение</td>
+                                <td>13 ноября 2018</td>
+                                <td><span class="process-td">на рассмотрении</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="request request-box">
+    <div class="request-top">
+        <div class="request-top-head"><button class="btn-close"><i class="icon i-close"></i>Закрыть</button></div>
+        <div class="request-leave">
+            <h2 class="subtitle">Заявка №38212</h2>
+            <div class="request-profile-cover">
+                <div class="request-profile">
+                    <div class="student-profile-img">
+                        <img src="img/main/profile.png" alt="">
+                    </div>
+                    <p>Азимханов Рустем</p>
+                </div>
+                <div class="request-date">
+                    13 ноября 2018 в 12:34
+                </div>
+            </div>
+            <p class="subtitle">Специальности</p>
+            <div class="speciality-items">
+                <div class="speciality-item">
+                    <p>Информатика</p>
+                    <span>5В070200</span>
+                </div>
+                <div class="speciality-item">
+                    <p>Бакалавр</p>
+                    <span>4 года</span>
+                </div>
+                <div class="speciality-item speciality-sale">
+                    <p>876 900₸/год</p>
+                    <span>- 176 900₸ скидка</span>
+                </div>
+            </div>
+            <p class="subtitle">Документы</p>
+            <div class="request-leave-cover">
+                <h3 class="subtitle">- Аттестат о среднем общем или диплом о начальном профессиональном или среднем профессиональном образовании (оригинал);</h3>
+                <div class="request-leave-item">
+                    <p class="request-document"><i class="icon i-pdf"></i>documentation.pdf <span class="document-size">~31.9 mb</span></p>
+                    <div class="document-change">
+                        <button class="btn-edit">Изменить</button>
+                        <button class="btn-edit btn-delete">Удалить</button>
+                    </div>
+                </div>
+                <div class="request-leave-item">
+                    <p class="request-document"><i class="icon i-zip"></i>Аттеста.zip <span class="document-size">~31.9 mb</span></p>
+                    <div class="document-change">
+                        <button class="btn-edit">Изменить</button>
+                        <button class="btn-edit btn-delete">Удалить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="request-leave-cover">
+                <h3 class="subtitle">- Медицинская справка в форме 086-У ;</h3>
+                <div class="request-leave-item">
+                    <p class="request-document"><i class="icon i-pdf"></i>documentation.pdf <span class="document-size">~31.9 mb</span></p>
+                    <div class="document-change">
+                        <button class="btn-edit">Изменить</button>
+                        <button class="btn-edit btn-delete">Удалить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="request-leave-cover">
+                <h3 class="subtitle">- Снимок флюорографии;</h3>
+                <div class="request-leave-item">
+                    <p class="request-document"><i class="icon i-pdf"></i>documentation.pdf <span class="document-size">~31.9 mb</span></p>
+                    <div class="document-change">
+                        <button class="btn-edit">Изменить</button>
+                        <button class="btn-edit btn-delete">Удалить</button>
+                    </div>
+                </div>
+                <div class="request-leave-item">
+                    <p class="request-document"><i class="icon i-zip"></i>Аттеста.zip <span class="document-size">~31.9 mb</span></p>
+                    <div class="document-change">
+                        <button class="btn-edit">Изменить</button>
+                        <button class="btn-edit btn-delete">Удалить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="request-leave-cover">
+                <h3 class="subtitle">- Адресная справка</h3>
+                <p class="item-absent">Отсуствует</p>
+            </div>
+        </div>
+        <div class="request-baseline">
+            <button class="btn-cancel call-cancel">Отклонить</button>
+            <button class="btn-send call-done">Принять</button>
+        </div>
+    </div>
+</div>
+<div class="request request-cancel">
+    <div class="request-top">
+        <div class="request-top-head"><button class="btn-close"><i class="icon i-close"></i>Закрыть</button></div>
+        <div class="request-leave">
+            <h2 class="subtitle">Отклонить заявку ?</h2>
+            <div class="delivery-item">
+                <p>Вы уверены что хотите отклонить заявку ? </p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Укажите причину отклонения (необязательно)"></textarea>
+                <span class="span-describe">
+                    * Если вы укажете причину отклонения такие как, не достающие документы и т.п. студенты могу заново переотправить заявку с заполненными данными.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="request-bottom request-confirm-bottom">
+        <button class="call-request">Назад</button>
+        <button class="btn-send call-cancel-done">Подтвердить</button>
+    </div>
+</div>
+<div class="request request-load">
+    <div class="request-top">
+        <div class="request-top-head"><button class="btn-close"><i class="icon i-close"></i>Закрыть</button></div>
+        <div class="request-success-item">
+            <div id="page-preloader">
+                    <span class="spinner">
+                        <img src="img/icon/Rolling-1s-200px.gif" alt="">
+                        <span class="spinner-bg"><img src="img/icon/preloder.png" alt=""></span>
+                    </span>
+            </div>
+            <p>Подождите чуть-чуть. Ваша заявка отправляется</p>
+        </div>
+    </div>
+</div>
+<div class="request request-success">
+    <div class="request-top">
+        <div class="request-top-head"><button class="btn-close"><i class="icon i-close"></i>Закрыть</button></div>
+        <div class="request-success-item">
+            <h2 class="subtitle">Вы приняли заявку </h2>
+            <p>Вы можете заново просмотреть и изменить статус заявку в списке заявок</p>
+            <button class="btn-send"><a href="univer_requests.html">Перейти в список заявок</a></button>
+        </div>
+    </div>
+</div>
+<div class="request request-cancel-done">
+    <div class="request-top">
+        <div class="request-top-head"><button class="btn-close"><i class="icon i-close"></i>Закрыть</button></div>
+        <div class="request-success-item">
+            <h2 class="subtitle">Вы отклонили заявку </h2>
+            <p>Вы можете заново просмотреть и изменить статус заявку в списке заявок</p>
+            <button class="btn-send"><a href="univer_requests.html">Перейти в список заявок</a></button>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-top">
+                <div class="sl-ref">
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-1.png" alt="">
+                            <p>Министерство Культуры и Спорта Республики Казахстан</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-2.png" alt="">
+                            <p>Международная выставка EXPO 2017 Astana</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Официальный интернет-ресурс города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Управление культуры и архивов города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-4.png" alt="">
+                            <p>Ак Орда</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-1.png" alt="">
+                            <p>Министерство Культуры и Спорта Республики Казахстан</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-2.png" alt="">
+                            <p>Международная выставка EXPO 2017 Astana</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Официальный интернет-ресурс города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Управление культуры и архивов города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-4.png" alt="">
+                            <p>Ак Орда</p>
+                        </div>
+                    </a></div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="col-md-3 col-sm-3">
+                    <div class="custom-select">
+                        <select name="">
+                            <option>Русский</option>
+                            <option>Русский 1</option>
+                            <option>Русский 2</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="">
+                            <option>Казахский тенге, ₸</option>
+                            <option>Казахский тенге, ₸ 1</option>
+                            <option>Казахский тенге, ₸ 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="footer-menu">
+                        <li><a href="#">ВУЗы</a></li>
+                        <li><a href="#">Колледжы</a></li>
+                        <li><a href="#">Специальности</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="footer-menu">
+                        <li><a href="#">Кабинет ВУЗа</a></li>
+                        <li><a href="#">Кабинет студента</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="col-md-3 col-sm-3">
+                    <a href="index.html">
+                        <img src="img/logo/logo-footer.png" alt="">
+                    </a></div>
+                <div class="col-md-9 col-sm-9">
+                    <p class="bg-box">Разработка информационной системы - <a href="https://bgpro.kz/" target="_blank">BG
+                        Pro</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="slick/slick.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

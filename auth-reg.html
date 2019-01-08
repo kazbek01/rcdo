@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>RCDO</title>
+</head>
+<link rel="stylesheet" href="css/libs.min.css">
+<link rel="stylesheet" href="css/main.css">
+<body>
+<header>
+    <div class="container-fluid green-header">
+        <div class="row">
+            <div class="container">
+                <div class="header-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">
+                            <img src="img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="place-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Алматы, Казахстан <i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search_result.html">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="right-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Тенге, ₸<i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рус <i
+                                        class="icon arrow-white"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Қаз</a></li>
+                                    <li><a href="#">Eng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="auth.html" class="btn-white">Войти</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav m-menu">
+                            <li><a href="index.html">Для ВУЗов</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="help.html">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="auth-box">
+    <div class="container-fluid bg-parent">
+        <div class="row">
+            <div class="auth-bg">
+                <img src="img/main/auth-mask.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6"></div>
+                    <div class="col-md-6 col-sm-6 auth-cover">
+                        <div class="auth-item reg-item">
+                            <div class="auth-wrapper">
+                                <h2 class="subtitle">Регистрация</h2>
+                                <div class="profile-img"> <img src="img/icon/user.png" alt=""></div>
+                                <label class="fileContainer">
+                                    <i class="icon i-download"></i>
+                                    Загрузить
+                                    <input type="file"/>
+                                </label>
+                                <form action="#" method="post" class="auth-form">
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Электронная почта">
+                                    <input type="text" placeholder="Номер телефона" class="mask-phone">
+                                    <input type="text" placeholder="Пароль">
+                                    <input type="text" placeholder="Повторите пароль">
+                                    <button class="btn-green" type="submit">Зарегистрироваться</button>
+                                </form>
+                                <div class="social-cover">
+                                    <span>Войти с помощью соц. сетей</span>
+                                    <ul class="auth-social">
+                                        <li><a href=""><i class="icon auth-fb"></i></a></li>
+                                        <li><a href=""><i class="icon auth-ins"></i></a></li>
+                                        <li><a href=""><i class="icon auth-vk"></i></a></li>
+                                        <li><a href=""><i class="icon auth-tw"></i></a></li>
+                                    </ul>
+                                    <p>У вас есть аккаунт? <a href="auth-reg.html">Войдите</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth-footer">
+                            <p>
+                                Нажимая «Зарегистрироваться», вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия
+                                <a href="#">«Соглашения об оказании услуг по содействию в трудоустройстве (оферта)»</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+    $(".mask-phone").mask("+7(999) 999-9999");
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>

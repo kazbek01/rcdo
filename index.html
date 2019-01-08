@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>RCDO</title>
+</head>
+<link rel="stylesheet" href="css/libs.min.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+<link rel="stylesheet" href="css/main.css">
+<body>
+<header>
+    <div class="container-fluid bg-top">
+        <div class="row">
+            <div class="container">
+
+                <div class="header-top search-result">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">
+                            <img src="img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="place-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Алматы, Казахстан <i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search_result.html">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                    <li><a href="#">Алматы, Казахстан</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="right-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Тенге, ₸<i
+                                        class="icon arrow-white"></i> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                    <li><a href="#">Тенге, ₸</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Рус <i
+                                        class="icon arrow-white"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Қаз</a></li>
+                                    <li><a href="#">Eng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="auth.html" class="btn-white">Войти</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav m-menu">
+                            <li><a href="index.html">Для ВУЗов</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="help.html">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <h1 class="block-title">Поиск</h1>
+
+                    <form action="#" class="search-form">
+                        <div class="form-item">
+                            <i class="icon i-search"></i>
+                            <input type="text" placeholder="Специальность" name="">
+                        </div>
+                        <div class="form-item">
+                            <i class="icon i-cap"></i>
+                            <div class="custom-select">
+                                <select name="">
+                                    <option>Вид обучения</option>
+                                    <option>Вид обучения 1</option>
+                                    <option>Вид обучения 2</option>
+                                    <option>Вид обучения 2</option>
+                                    <option>Вид обучения 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <i class="icon i-build"></i>
+                            <div class="custom-select">
+                                <select name="">
+                                    <option>Тип Вуза</option>
+                                    <option>Тип Вуза 1</option>
+                                    <option>Тип Вуза 2</option>
+                                    <option>Тип Вуза 2</option>
+                                    <option>Тип Вуза 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="custom-select">
+                                <select name="">
+                                    <option>Тип обучения</option>
+                                    <option>Тип обучения 1</option>
+                                    <option>Тип обучения 2</option>
+                                    <option>Тип обучения 2</option>
+                                    <option>Тип обучения 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="custom-select">
+                                <select name="">
+                                    <option>Дополнительно</option>
+                                    <option>Дополнительно 1</option>
+                                    <option>Дополнительно 2</option>
+                                    <option>Дополнительно 2</option>
+                                    <option>Дополнительно 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item range-box">
+                            <span>Цена</span>
+                            <input id="ex2" type="text" class="span2" value="" data-slider-min="100000" data-slider-max="3000000" data-slider-step="5" data-slider-value="[250,450]"/>
+                        </div>
+                        <div class="form-item">
+                            <button class="btn-green" type="submit">Поиск</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<section class="univer-box">
+    <div class="container-fluid bg-parent">
+        <div class="row">
+            <div class="bg-back"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/aues.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-aues.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Алматинский Университет Энергетики и Связи</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kaznu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kaznu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахский Национальный Университет им. Аль-Фараби</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kbtu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kbtu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахско-Британский Технологический Университет</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 1 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/aues.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-aues.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Алматинский Университет Энергетики и Связи</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kaznu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kaznu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахский Национальный Университет им. Аль-Фараби</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kbtu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kbtu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахско-Британский Технологический Университет</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 1 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/aues.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-aues.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Алматинский Университет Энергетики и Связи</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kaznu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kaznu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахский Национальный Университет им. Аль-Фараби</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <a href="univer.html">
+                            <div class="univer-item">
+                                <div class="univer-item-img"><img src="img/main/kbtu.png" alt=""></div>
+                                <div class="univer-item-caption">
+                                    <div class="univer-caption-top">
+                                        <img src="img/logo/logo-kbtu.png" alt="">
+                                        <span class="univer-location">АЛМАТЫ · КАЗАХСТАН</span>
+                                        <h2 class="univer-name">Казахско-Британский Технологический Университет</h2>
+                                    </div>
+                                    <div class="univer-price">
+                                        <div class="price-left"><p>от 1 456 900₸</p> <span>/в год</span></div>
+                                        <div class="price-right"><p>666 900₸</p> <span
+                                                class="econom">экономтье 120 000</span></div>
+                                    </div>
+                                    <div class="univer-caption-bottom">
+                                        <span>Начало приема заявок</span>
+                                        <p>с 20 июня по 25 августа</p>
+                                        <div class="univer-rating">
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <i class="icon i-star"></i>
+                                            <span>284</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-top">
+                <div class="sl-ref">
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-1.png" alt="">
+                            <p>Министерство Культуры и Спорта Республики Казахстан</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-2.png" alt="">
+                            <p>Международная выставка EXPO 2017 Astana</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Официальный интернет-ресурс города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Управление культуры и архивов города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-4.png" alt="">
+                            <p>Ак Орда</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-1.png" alt="">
+                            <p>Министерство Культуры и Спорта Республики Казахстан</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-2.png" alt="">
+                            <p>Международная выставка EXPO 2017 Astana</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Официальный интернет-ресурс города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-3.png" alt="">
+                            <p>Управление культуры и архивов города Алматы</p>
+                        </div>
+                    </a></div>
+                    <div class="ref-item"><a href="#">
+                        <div class="sponsor-item">
+                            <img src="img/logo/link-logo-4.png" alt="">
+                            <p>Ак Орда</p>
+                        </div>
+                    </a></div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="col-md-3 col-sm-3">
+                    <div class="custom-select">
+                        <select name="">
+                            <option>Русский</option>
+                            <option>Русский 1</option>
+                            <option>Русский 2</option>
+                        </select>
+                    </div>
+                    <div class="custom-select">
+                        <select name="">
+                            <option>Казахский тенге, ₸</option>
+                            <option>Казахский тенге, ₸ 1</option>
+                            <option>Казахский тенге, ₸ 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="footer-menu">
+                        <li><a href="#">ВУЗы</a></li>
+                        <li><a href="#">Колледжы</a></li>
+                        <li><a href="#">Специальности</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="footer-menu">
+                        <li><a href="#">Кабинет ВУЗа</a></li>
+                        <li><a href="#">Кабинет студента</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="col-md-3 col-sm-3">
+                    <a href="index.html">
+                        <img src="img/logo/logo-footer.png" alt="">
+                    </a></div>
+                <div class="col-md-9 col-sm-9">
+                    <p class="bg-box">Разработка информационной системы - <a href="https://bgpro.kz/" target="_blank">BG
+                        Pro</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="slick/slick.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
