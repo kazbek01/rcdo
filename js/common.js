@@ -68,12 +68,28 @@ $(document).ready(function(){
     $('.close-search').on('click', function () {
         $('.search-cover-box').removeClass('search-showed');;
     });
+
+    //data-table
+    $('.data-table').DataTable({
+        "searching": false,
+        "paging": false,
+        "columnDefs":[
+            {
+                "targets": [1,2,5],
+                "orderable": false
+            }
+        ]
+    });
+
+
     //wow
     new WOW().init();
 
 
     //
     $('#widget').draggable();
+
+
 });
 
 // sl-gallery

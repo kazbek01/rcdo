@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
     <title>Profile</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<link rel="stylesheet" href="css/libs.min.css">
-<link rel="stylesheet" href="slick/slick.css">
-<link rel="stylesheet" href="slick/slick-theme.css">
-<link rel="stylesheet" href="css/bootstrap-slider.min.css">
-<link rel="stylesheet" href="css/main.css">
+
 <body>
 
 <header>
@@ -273,13 +274,13 @@
                     <div class="delivery-form-item">
                         <div class="delivery-item">
                             <p>Тип оплаты за услуги</p>
-                            <div class="custom-select">
-                                <select name="">
+
+                                <select name="" class="select-item">
                                     <option>Наличными</option>
                                     <option>Наличными 1</option>
                                     <option>Наличными 2</option>
                                 </select>
-                            </div>
+
                         </div>
                         <div class="delivery-item">
                             <p>Адрес отправителя</p>
@@ -293,25 +294,25 @@
                         </div>
                         <div class="delivery-item">
                             <p>Вид отправки</p>
-                            <div class="custom-select">
-                                <select name="">
+
+                                <select name="" class="select-item">
                                     <option>Экспресс доставка по РК</option>
                                     <option>Экспресс доставка по РК 1</option>
                                     <option>Экспресс доставка по РК 2</option>
                                 </select>
-                            </div>
+
                         </div>
                     </div>
                     <div class="delivery-form-item">
                         <div class="delivery-item">
                             <p>Дата отправки</p>
-                            <div class="custom-select">
-                                <select name="">
+
+                                <select name="" class="select-item">
                                     <option>12 декабря 2018</option>
                                     <option>12 декабря 2018</option>
                                     <option>12 декабря 2018</option>
                                 </select>
-                            </div>
+
                         </div>
                         <div class="delivery-item">
                             <p>Время отправки</p>
@@ -322,13 +323,13 @@
                     <div class="delivery-form-item">
                         <div class="delivery-item">
                             <p>Детали отправки</p>
-                            <div class="custom-select">
-                                <select name="">
+
+                                <select name="" class="select-item">
                                     <option>Документы</option>
                                     <option>Документы</option>
                                     <option>Документы</option>
                                 </select>
-                            </div>
+
                         </div>
                         <div class="delivery-item">
                             <p>Режим работы вашего офиса</p>
@@ -412,20 +413,16 @@
             </div>
             <div class="footer-middle">
                 <div class="col-md-3 col-sm-3">
-                    <div class="custom-select">
-                        <select name="">
-                            <option>Русский</option>
-                            <option>Русский 1</option>
-                            <option>Русский 2</option>
-                        </select>
-                    </div>
-                    <div class="custom-select">
-                        <select name="">
-                            <option>Казахский тенге, ₸</option>
-                            <option>Казахский тенге, ₸ 1</option>
-                            <option>Казахский тенге, ₸ 2</option>
-                        </select>
-                    </div>
+                    <select name="" class="select-item">
+                        <option>Русский</option>
+                        <option>Русский 1</option>
+                        <option>Русский 2</option>
+                    </select>
+                    <select name="" class="select-item">
+                        <option>Казахский тенге, ₸</option>
+                        <option>Казахский тенге, ₸ 1</option>
+                        <option>Казахский тенге, ₸ 2</option>
+                    </select>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <ul class="footer-menu">
