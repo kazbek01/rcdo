@@ -82,10 +82,9 @@ $(document).ready(function(){
     });
 
 
-    //wow
-    new WOW().init();
+    //equal
 
-
+    setEqualHeight($(".row-equal > div"));
     //
     $('#widget').draggable();
 

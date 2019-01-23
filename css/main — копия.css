@@ -208,18 +208,8 @@ body {
 
 .navbar-brand {
   padding: 0 5px;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
 }
-.navbar-brand img{
-  height: 100%;
-}
+
 .header-bottom {
   margin-top: 63px;
 }
@@ -644,11 +634,6 @@ body {
   margin-right: 10px;
   position: absolute;
   top: -50px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid #e0e0e0;
-  object-fit: cover;
 }
 
 .univer-item .univer-name {
@@ -2711,23 +2696,10 @@ button a:hover, button a:focus {
 }
 
 .chat-content {
-  padding: 0px 15px 0 10px;
+  padding: 0px 10px;
   background: #FAFBFC;
-  max-height: 485px;
-  overflow-y: scroll;
-}
-.chat-content::-webkit-scrollbar
-{
-  width: 3px;
-  background-color: #F5F5F5;
 }
 
-.chat-content::-webkit-scrollbar-thumb
-{
-  border-radius: 1px;
-  -webkit-box-shadow: inset 0 0 6px #0db24c;
-  background-color: #555;
-}
 .request-chat {
   background: #FAFBFC;
 }
@@ -2825,12 +2797,12 @@ button a:hover, button a:focus {
 .message-new {
   background-color: white;
   padding: 12px;
-  /*margin-left: -10px;*/
-  /*margin-right: -25px;*/
-  /*margin-bottom: -13px;*/
+  margin-left: -10px;
+  margin-right: -25px;
+  margin-bottom: -13px;
 }
 
-.message-new-form textarea {
+.message-new-form input {
   width: 100%;
   margin-bottom: 5px;
   font-weight: normal;
@@ -2839,42 +2811,30 @@ button a:hover, button a:focus {
   color: rgba(0, 0, 0, 0.7);
   border: none;
   outline: none;
-  resize: none;
-}
-.message-new-form textarea::-webkit-scrollbar
-{
-  width: 3px;
-  background-color: #F5F5F5;
 }
 
-.message-new-form textarea::-webkit-scrollbar-thumb
-{
-  border-radius: 1px;
-  -webkit-box-shadow: inset 0 0 6px rgb(0, 105, 196);
-  background-color: #555;
-}
-.message-new-form textarea:focus {
+.message-new-form input:focus {
   border: none;
   outline: none;
 }
 
-.message-new-form textarea::-webkit-input-placeholder {
+.message-new-form input::-webkit-input-placeholder {
   color: #D8D8D8;
 }
 
-.message-new-form textarea::-moz-placeholder {
+.message-new-form input::-moz-placeholder {
   color: #D8D8D8;
 }
 
-.message-new-form textarea:-ms-input-placeholder {
+.message-new-form input:-ms-input-placeholder {
   color: #D8D8D8;
 }
 
-.message-new-form textarea::-ms-input-placeholder {
+.message-new-form input::-ms-input-placeholder {
   color: #D8D8D8;
 }
 
-.message-new-form textarea::placeholder {
+.message-new-form input::placeholder {
   color: #D8D8D8;
 }
 
@@ -4057,44 +4017,7 @@ button a:hover, button a:focus {
   right: 10px;
   top: 0px;
 }
-.logo-footer-cover{
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  align-items: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.logo-text{
-  color: white;
-  font-size: 13px;
-  display: inline-block;
-  max-width: 140px;
-  line-height: normal;
-  margin-left: 10px;
-}
-.logo-text-footer{
-  display: inline-block;
-  color: #818285;
-  font-size: 14px;
-  max-width: 140px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 10px;
-  line-height: normal;
-}
-.logo-text-footer a{
-  display: block;
-  color: #4cae4c;
-  font-size: 12px;
-}
-.logo-text-footer a:hover,.logo-text-footer a:focus{
-  color: #4cae4c;
-  text-decoration: none;
-}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .search-form {
     display: block;
@@ -4356,8 +4279,6 @@ button a:hover, button a:focus {
   }
   .chat-content {
     padding: 10px 0;
-    max-height: 285px;
-    overflow-x: hidden;
   }
   .message-new {
     margin-right: -10px;
@@ -4543,21 +4464,6 @@ button a:hover, button a:focus {
   }
   .ml24{
     margin-left: 24px;
-  }
-  .univer-step .logo-text-footer{
-    color: white;
-  }
-  .univer-step .logo-text-footer a{
-    color: white;
-  }
-  .univer-step .logo-text-footer a:focus, .univer-step .logo-text-footer a:hover{
-    color: white;
-    text-decoration: none;
-  }
-  .logo-footer-cover{
-    justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
   }
 }
 
@@ -4770,22 +4676,22 @@ button a:hover, button a:focus {
   .message-new-form .btn-blue {
     font-size: 12px;
   }
-  .message-new-form textarea {
+  .message-new-form input {
     font-size: 12px;
   }
-  .message-new-form textarea::-webkit-input-placeholder {
+  .message-new-form input::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::-moz-placeholder {
+  .message-new-form input::-moz-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea:-ms-input-placeholder {
+  .message-new-form input:-ms-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::-ms-input-placeholder {
+  .message-new-form input::-ms-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::placeholder {
+  .message-new-form input::placeholder {
     font-size: 12px;
   }
   .message-new {
@@ -4860,10 +4766,6 @@ button a:hover, button a:focus {
   }
   .bg-top-search{
     height: 500px;
-  }
-  .chat-content{
-    max-height: 425px;
-    overflow-x: hidden;
   }
 }
 
@@ -5012,22 +4914,22 @@ button a:hover, button a:focus {
   .message-new-form .btn-blue {
     font-size: 12px;
   }
-  .message-new-form textarea {
+  .message-new-form input {
     font-size: 12px;
   }
-  .message-new-form textarea::-webkit-input-placeholder {
+  .message-new-form input::-webkit-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::-moz-placeholder {
+  .message-new-form input::-moz-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea:-ms-input-placeholder {
+  .message-new-form input:-ms-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::-ms-input-placeholder {
+  .message-new-form input::-ms-input-placeholder {
     font-size: 12px;
   }
-  .message-new-form textarea::placeholder {
+  .message-new-form input::placeholder {
     font-size: 12px;
   }
   .message-new {
