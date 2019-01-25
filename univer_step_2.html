@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -24,7 +24,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="index.html" class="navbar-brand">
-                            <img src="img/logo/RCDO-logo-rus.png" alt="" class="hidden-xs">
+                            <img src="img/logo/logo-footer.png" alt="" class="hidden-xs">
                             <img src="img/logo/logo.png" alt="" class="visible-xs">
                         </a>
                         <span class="logo-text-footer">
@@ -151,19 +151,31 @@
                                     <input type="text" placeholder="+7 727 321 12 32 ">
                                 </div>
                                 <div class="delivery-item">
-                                    <p>E-mail</p>
-                                    <input type="text" placeholder="aipet@gmail.com">
+                                    <p>Веб сайт</p>
+                                    <input type="text" placeholder="aipet.kz">
                                 </div>
                             </div>
                             <div class="delivery-form-item">
                                 <div class="delivery-item">
-                                    <p>Веб сайт</p>
-                                    <input type="text" placeholder="aipet.kz">
-                                </div>
-                                <div class="delivery-item">
                                     <p>Адрес Вуза</p>
                                     <input type="text" placeholder="ул. Байтурсынова 141">
                                 </div>
+                                <div class="delivery-item">
+                                    <p>Прием заявок </p>
+                                    <input type="text" name="daterange" value="01/01/2019 - 01/15/2019" placeholder="20 июня - 25 августа"/>
+                                </div>
+
+                            </div>
+                            <div class="delivery-form-item">
+                                <div class="delivery-item">
+                                    <p>Инстаграм</p>
+                                    <input type="text" placeholder="instagram">
+                                </div>
+                                <div class="delivery-item">
+                                    <p>Facebook</p>
+                                    <input type="text" placeholder="Аккаунт">
+                                </div>
+
                             </div>
                             <div class="request-bottom request-confirm-bottom">
                                 <button class="btn-back"><a href="univer_step_1.html">Назад</a></button>
@@ -180,7 +192,19 @@
 </section>
 <script src="js/libs.min.js"></script>
 <script src="slick/slick.js"></script>
-<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script>
+    $(function() {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+
+
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>

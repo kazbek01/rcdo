@@ -421,6 +421,20 @@
 <script src="slick/slick.js"></script>
 <script src="js/bootstrap-slider.min.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
+<script>
+    //data-table
+    $('.data-table').DataTable({
+        "searching": false,
+        "paging": false,
+        "columnDefs":[
+            {
+                "targets": [1,2,5],
+                "orderable": false
+            }
+        ]
+    });
+
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>
