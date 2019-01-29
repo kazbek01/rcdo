@@ -69,6 +69,12 @@ $(document).ready(function(){
         $('.search-cover-box').removeClass('search-showed');;
     });
 
+    $('.call-univerList').on('click', function () {
+        $('.delivery-order').removeClass('hide');
+        $('.overlay').addClass('overlay-showed');
+        $('.univer-chatbox').addClass('showed');
+    });
+
 });
 
 // sl-gallery
