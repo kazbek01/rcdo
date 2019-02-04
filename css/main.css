@@ -268,7 +268,7 @@ body {
   background-color: white;
   border-right: 1px solid #E4E4E4;
 }
-.form-item-last{
+.search-form .form-item-last{
   /*-webkit-border-radius: 4px;*/
   /*border-radius: 4px;*/
   border-right: none;
@@ -4677,10 +4677,10 @@ button a:hover, button a:focus {
     padding-top: 0;
   }
   .search-form .form-item select{
-    width: 90%;
+    min-width: 200px;
   }
   .search-form .form-item{
-    display: block;
+    padding: 10px;
   }
   .ml24{
     margin-left: 24px;
@@ -4713,6 +4713,25 @@ button a:hover, button a:focus {
   }
   .chat-start-cover{
     min-height: 416px;
+  }
+  .search-form .range-box{
+    max-width: 100%;
+  }
+  .search-form .range-box .delivery-item{
+    margin-top: 10px;
+  }
+  .navbar-header .logo-text-footer{
+    font-weight: normal;
+  }
+  .daterangepicker.show-calendar .drp-buttons{
+    display: flex;
+  }
+  .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    min-width: 22px;
+    width: 22px;
+    height: 20px;
+    line-height: 19px;
+    font-size: 11px;
   }
 }
 
