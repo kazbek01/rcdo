@@ -337,9 +337,7 @@ body {
   font-size: 14px;
   color: #808285;
 }
-.search-form .form-item .icon{
-  margin-right: 5px;
-}
+
 .search-form .form-item input::-moz-placeholder {
   font-size: 14px;
   color: #808285;
@@ -573,7 +571,13 @@ body {
   width: 22px;
   height: 20px;
 }
-
+.i-points {
+  background: url("../img/icon/dopolnitelno.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
+  width: 22px;
+  height: 20px;
+}
 .arrow-white {
   background: url("../img/icon/arrow-white.png") no-repeat;
   width: 10px;
@@ -2825,7 +2829,7 @@ button a:hover, button a:focus {
 .chat-content {
   padding: 0px 15px 0 10px;
   background: #FAFBFC;
-  max-height: 485px;
+  /*max-height: 485px;*/
   overflow-y: scroll;
 }
 .chat-content::-webkit-scrollbar
@@ -4228,12 +4232,104 @@ button a:hover, button a:focus {
 .univer-chatbox{
   width: 30%;
 }
+/*************************/
+.request-chat{
+  background-color: white;
+  padding: 0;
+  overflow: hidden;
+}
+.request-chat-left{
+  height: 485px;
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 15px 0 15px 15px;
+  background-color: white;
+
+}
+.request-chat-right{
+  padding: 15px 0;
+  background: #FAFBFC;
+}
+.chat-tabs{
+  height: 414px;
+  overflow-y: scroll;
+}
+
+.chat-tabs::-webkit-scrollbar
+{
+  width: 3px;
+  background-color: #F5F5F5;
+}
+
+.chat-tabs::-webkit-scrollbar-thumb
+{
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 6px #0db24c;
+  background-color: #555;
+}
+.chat-content {
+  padding: 0px 15px 0 10px;
+  background: #FAFBFC;
+  /* max-height: 485px; */
+  overflow-y: scroll;
+  height: 340px;
+  position: relative;
+}
+.message-new {
+  background-color: white;
+  padding: 12px;
+}
+
+.message-shell{
+  width: 100%;
+}
+.message-shell::after{
+  display: table;
+  content: " ";
+  clear: both;
+}
+.message-shell-new{
+  padding: 0 10px;
+}
+.chat-box .request-chat-left {
+  height: 660px;
+}
+.chat-box .chat-tabs {
+height: 585px
+}
+.chat-box  .chat-content {
+  height: 513px;
+}
+.chat-start-item .request-chat-right{
+  height: 660px;
+  position: relative;
+}
+.chat-start-item .request-chat-right .chat-right {
+  margin-left: -200px;
+  left: 50%;
+}
+table.dataTable thead th, table.dataTable thead td {
+  padding: 10px 9px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.11);
+  text-align: left;
+}
+table.dataTable tbody th, table.dataTable tbody td{
+  text-align: left;
+}
+.univer-list-box .specialty-box {
+  top: -45px;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+/****************************/
+
 @media (min-width: 320px) and (max-width: 767px) {
   .search-form {
     display: block;
     background-color: transparent;
     border: none;
     box-shadow: none;
+    border-radius: 4px;
+    overflow: hidden;
   }
   .result-cover-absolute{
     display: block;
@@ -4242,9 +4338,7 @@ button a:hover, button a:focus {
   .result-type{
     display: block;
   }
-  .form-item-last{
-    border-radius: 0;
-  }
+
   .univer-box {
     top: 50px;
     margin-bottom: 0;
@@ -4291,10 +4385,12 @@ button a:hover, button a:focus {
     text-align: left;
   }
   .bg-top {
-    background-color: #0db14c;
-    height: auto;
-    background-image: none;
+    /*background-color: #0db14c;*/
+    /*height: auto;*/
+    background-image: url(../img/main/fon.png);
     padding-bottom: 30px;
+    background-size: cover;
+    height: 545px;
   }
   .custom-select {
     width: 100%;
@@ -4677,10 +4773,21 @@ button a:hover, button a:focus {
     padding-top: 0;
   }
   .search-form .form-item select{
-    min-width: 200px;
+    min-width: 100px;
   }
   .search-form .form-item{
     padding: 10px;
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  .search-form .form-item-last{
+    border-radius: 0;
+    float: none;
+    width: 100%;
+  }
+  .search-form .form-item-last .btn-green{
+    width: 100%;
   }
   .ml24{
     margin-left: 24px;
@@ -4716,9 +4823,21 @@ button a:hover, button a:focus {
   }
   .search-form .range-box{
     max-width: 100%;
+    width: 100%;
+  }
+
+  .search-form .range-box::before{
+    clear: both;
+    display: table;
+    content: " ";
+  }
+  .search-form .form-item-first{
+    float: none;
+    width: 100%;
   }
   .search-form .range-box .delivery-item{
     margin-top: 10px;
+    margin-bottom:  0;
   }
   .navbar-header .logo-text-footer{
     font-weight: normal;
@@ -4733,6 +4852,46 @@ button a:hover, button a:focus {
     line-height: 19px;
     font-size: 11px;
   }
+  /********************/
+  .profile-cover-item .block-title{
+    font-size: 20px;
+  }
+  .chat-content{
+    padding: 10px;
+  }
+  .chat-tabs {
+    height: 346px;
+  }
+  .request-chat-left{
+    height: 437px;
+  }
+  .chat-box .request-chat-left {
+    height: 437px;
+  }
+  .chat-box .chat-tabs {
+    height: 346px;
+  }
+  /*.chat-box  .chat-content {*/
+    /*height: 513px;*/
+  /*}*/
+  .chat-start-item .request-chat-left{
+    padding: 15px;
+    height: 300px;
+  }
+  .chat-start-item .request-chat-left .chat-start{
+    margin-top: 30px;
+  }
+  .chat-start-item .request-chat-right{
+    height: 300px;
+    position: relative;
+    padding: 15px;
+  }
+  .chat-start-item .request-chat-right .chat-right {
+    position: static;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  /************************/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5040,7 +5199,6 @@ button a:hover, button a:focus {
     height: 500px;
   }
   .chat-content{
-    max-height: 425px;
     overflow-x: hidden;
   }
   .chat-start-text p{
@@ -5055,6 +5213,29 @@ button a:hover, button a:focus {
   .univer-chatbox{
     width: 50%;
   }
+  /*****************/
+  .chat-box .request-chat-left {
+    height: 579px;
+  }
+  .chat-box .chat-tabs {
+    height: 500px;
+  }
+  .chat-box  .chat-content {
+    height: 435px;
+  }
+  .chat-start-item .request-chat-left{
+    height: 579px;
+  }
+  .chat-start-item .request-chat-right{
+    height: 579px;
+    position: relative;
+    padding: 15px;
+  }
+  .chat-start-item .request-chat-right .chat-right {
+    width: 250px;
+    margin-left: -125px;
+  }
+  /*************************/
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -5259,6 +5440,34 @@ button a:hover, button a:focus {
   .univer-chatbox{
     width: 50%;
   }
+  /****************************/
+  .chat-box .request-chat-left {
+    height: 579px;
+  }
+  .chat-box .chat-tabs {
+    height: 500px;
+  }
+  .chat-box  .chat-content {
+    height: 435px;
+  }
+  .chat-start-item .request-chat-left{
+    height: 579px;
+    position: relative;
+  }
+  .chat-start-item .request-chat-right{
+    height: 579px;
+    position: relative;
+  }
+  .chat-start-item .request-chat-right .chat-right {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .chat-start-item .request-chat-left .chat-start {
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+  }
+  /****************************/
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
